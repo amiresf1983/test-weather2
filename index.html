@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>5-day Weather Forecast App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="col-md-12 text-white text-center">
+        <div class="jumbotron bg-info">
+          <h3 class="display-3 font-weight-bold text-white">
+            <i class="fas fa-sun"></i>
+            5-Day Weather Forecast
+            <i class="fas fa-sun"></i>
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm col-md">
+            <input
+              type="text"
+              id="input-city"
+              placeholder="Search location..."
+            />
+
+            <button id="find-location" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <div class="mt-3" id="view-button"></div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="card-body m-2" id="result-weather"></div>
+
+            <div class="card-text row text-light" id="forecast-weather"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
